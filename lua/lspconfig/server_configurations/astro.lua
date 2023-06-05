@@ -15,7 +15,7 @@ return {
   default_config = {
     cmd = { 'astro-ls', '--stdio' },
     filetypes = { 'astro' },
-    root_dir = util.root_pattern('package.json', 'tsconfig.json', 'jsconfig.json', '.git'),
+    root_dir = util.root_pattern 'package.json',
     init_options = astro_init_options,
     on_new_config = function(new_config, new_root_dir)
       if new_config.init_options
